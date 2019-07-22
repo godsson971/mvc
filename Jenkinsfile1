@@ -6,4 +6,6 @@ stages{
     sh '/home/stagiaire/maven3/bin/mvn clean install'
     }
   }
+  }
+  }
   
