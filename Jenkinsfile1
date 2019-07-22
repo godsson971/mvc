@@ -1,15 +1,15 @@
 pipeline {
 agent any
-stage {
+stages{
   stage('Build'){
     steps{
     sh '/home/stagiaire/maven3/bin/mvn clean install'
     }
-}
-stage('Test'){
+  }
+  stage('Test'){
     steps{
-    sh '/home/stagiaire/maven3/bin/mvn clean install'
-}
-}
+    sh '/home/stagiaire/maven3/bin/mvn test'
+    }
+  }
 }
 }
